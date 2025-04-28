@@ -16,12 +16,12 @@
 .demo-left h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #111827;
+  color: #000;
 }
 
 .demo-left .intro-text {
   font-size: 1.125rem;
-  color: #4b5563;
+  color: #000;
   margin-bottom: 2rem;
 }
 
@@ -33,12 +33,12 @@
 
 .feature-item h3 {
   font-size: 1.125rem;
-  color: #1d4ed8;
+  color: #003366;
   margin-bottom: 0.5rem;
 }
 
 .feature-item p {
-  color: #6b7280;
+  color: #000;
   font-size: 1rem;
 }
 
@@ -57,7 +57,7 @@
 .form-card h2 {
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
-  color: #111827;
+  color: #003366;
 }
 
 .demo-form input {
@@ -72,7 +72,7 @@
 .demo-form button {
   width: 100%;
   padding: 0.75rem;
-  background-color: #1d4ed8;
+  background-color: #003366;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -82,5 +82,53 @@
 }
 
 .demo-form button:hover {
-  background-color: #1e40af;
+  background-color: #003366;
 }
+
+@media (max-width: 1024px) {
+  .book-demo-modern {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .demo-left, .demo-right {
+    max-width: 100%;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-left h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .demo-left .intro-text {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .feature-item {
+    text-align: center;
+  }
+
+  .form-card {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .book-demo-modern {
+    padding: 2rem 1rem;
+  }
+
+  .demo-left h1 {
+    font-size: 1.75rem;
+  }
+
+  .form-card h2 {
+    font-size: 1.5rem;
+  }
+}
+
