@@ -216,14 +216,14 @@ return (
 <section className="needle-section">
       <div className="needle-wrapper">
         <div className="needle-content">
-          <h2 className="needle-heading">Find The Needle In The Haystack</h2>
-          <p className="needle-description">
-            Our investigations have found more risks in due diligence cases. Yet we have saved minimum 25% of the time of analysts.
-            <br /><br />
-            We find the smallest needles in the world's biggest haystack.
-          </p>
-          <button className="needle-button">Request A Demo</button>
-        </div>
+        <h2 className="needle-heading">Find What Others Can't See</h2>
+<p className="needle-description">
+  We supercharge your investigations, surfacing hidden threats and key opportunities faster than ever — and saving analysts 30% of their time.
+  <br /><br />
+  The world's biggest data haystacks? We cut straight through them.
+</p>
+<button className="needle-button">Request A Demo</button>
+</div>
         <div className="needle-image">
           <img 
             src={connect} 
@@ -238,30 +238,27 @@ return (
     <div class="analysis-image">
       <img src={analysis} alt="Analytics Illustration"/>
     </div>
-    <div class="analysis-content">
-      <h2>Clear Risk Reporting, Efficiently Delivered</h2>
-      <p>Receive concise, accurate findings that focus on relevant red flags only – all with zero false positives.</p>
-      <p>No more wasting time sifting through lots of irrelevant data.</p>
-      <button className="demo-buttons">Request A Demo</button>
-    </div>
+    <div className="analysis-content">
+  <h2>Actionable Intelligence Without the Noise</h2>
+  <p>Get precise, targeted reports that highlight only the critical risks — no clutter, no false positives.</p>
+  <p>Spend less time reviewing and more time making informed decisions.</p>
+  <button className="demo-buttons">Request A Demo</button>
+</div>
+
   </div>
 </section>
 
 <section class="risk-section">
-  <div class="risk-container">
-    
-    <div class="risk-content">
-      <h2>Ongoing Monitoring To Identify New Risks</h2>
-      <p>The key challenge is out-of-date information which cannot predict an impending risk or potential disaster.</p>
-      <p>Our Platform monitors ongoing risks using real-time online data. Monitor only those risks you need to.</p>
-      <button className="demo-buttons">Request A Demo</button>
-
-    </div>
-
+  <div class="risk-container">  
+  <div className="risk-content">
+  <h2>Proactive Monitoring for Emerging Threats</h2>
+  <p>Relying on static data can expose you to risks that evolve rapidly and unpredictably.</p>
+  <p>With real-time intelligence, our platform keeps you informed of only the most relevant threats — as they happen.</p>
+  <button className="demo-buttons">Request A Demo</button>
+</div>
     <div class="risk-image">
       <img src={monitor} alt="Monitoring Screenshot"/>
     </div>
-
   </div>
 </section>
 

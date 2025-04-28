@@ -260,11 +260,21 @@ h1 {
   flex-wrap: wrap;
 }
 
-.analysis-image img {
-  width: 550px; 
-  height: 450px;
-  border-radius: 12px;
+.analysis-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+
+.analysis-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 
 .analysis-content {
   max-width: 550px;
@@ -376,12 +386,21 @@ h1 {
   color: #ffffff;
 }
 
-.risk-image img {
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  width: 550px; 
-  height: 450px;
+.risk-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+
+.risk-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -515,6 +534,7 @@ h1 {
   .usecase-card li {
     margin-bottom: 8px;
     line-height: 1.5;
+    list-style-type: none;
   }
 }
 
