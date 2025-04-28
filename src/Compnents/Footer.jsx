@@ -38,12 +38,11 @@ return(
                     <li>General</li>
                     <li>OSINT Guide</li>
                     <li>Law Enforcement</li>
-                    {/* <li>Intelligence Anaylysis</li> */}
                 </ul>
             </div>
         </div>
         <div className="footer-bottom">
-            2023. All right reserved
+            2025. All right reserved
         </div>
     </footer>
     </>

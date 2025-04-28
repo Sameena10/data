@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default{
     server:{
-        historyApiFallback:true,
+        port:9000,
     },
 }
