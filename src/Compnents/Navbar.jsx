@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "../style/navb.css";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -9,7 +9,6 @@ const Navbar = () => {
   const [openMobileDropdown, setOpenMobileDropdown] = useState(null);
   const navRef = useRef(); 
 
-  // Handle hover for desktop
   const handleMouseEnter = (menu) => {
     if (!isMobileMenuOpen) setOpenMenu(menu);  
   };
@@ -18,18 +17,15 @@ const Navbar = () => {
     if (!isMobileMenuOpen) setOpenMenu(null);  
   };
 
-  // Toggle mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
     setOpenMobileDropdown(null);  
   };
 
-  // Toggle dropdown for mobile view
   const toggleMobileDropdown = (id) => {
     setOpenMobileDropdown(openMobileDropdown === id ? null : id); 
   };
 
-  // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
@@ -52,15 +48,6 @@ const Navbar = () => {
       ],
     },
     {
-      label: "Industries",
-      id: "industries",
-      dropdown: [
-        { label: "Government", path: "/government" },
-        { label: "Financial Services", path: "/financial-services" },
-        { label: "Healthcare", path: "/healthcare" },
-      ],
-    },
-    {
       label: "Product",
       id: "product",
       dropdown: [
@@ -70,16 +57,7 @@ const Navbar = () => {
         { label: "FAQs By Job Role", path: "/faqs" },
         { label: "Did You Know?", path: "/did-you-know" },
       ],
-    },
-    {
-      label: "More",
-      id: "more",
-      dropdown: [
-        { label: "Partners", path: "/partners" },
-        { label: "Careers", path: "/careers" },
-        { label: "About Us", path: "/about" },
-      ],
-    },
+    }
   ];
 
   return (
@@ -95,7 +73,7 @@ const Navbar = () => {
       <ul className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
 
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Platform</Link>
         </li>
 
         {menuItems.map((item) => (
@@ -134,7 +112,9 @@ const Navbar = () => {
       </ul>
 
       <div className="navbar-right">
-        <button className="demo-btn">Get A Free Demo</button>
+      <Link to="/book-demo">
+      <button className="demo-btn">Request A Demo</button>
+     </Link>
       </div>
     </nav>
     

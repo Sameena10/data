@@ -124,9 +124,7 @@ const Technology=()=>{
             ],
             footer:""
         }
-
-
-      ];
+];
   const FeatureSection = ({ title, description, points, footer }) => {
     return (
       <div className="feature-section">
@@ -163,9 +161,9 @@ const Technology=()=>{
           points={section.points}
           footer={section.footer}
         />
-      ))}
-            </section>
-        </div>
+  ))}
+</section>
+</div>
     )
 }
 export default Technology;

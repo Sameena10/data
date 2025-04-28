@@ -9,6 +9,7 @@ import "./App.css"
 import Product from './Pages/Product';
 import Technology from './Pages/Technology';
 import ScrollTop from './Compnents/ScrollTop';
+import Demo from './Pages/Demo';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path='/usecase' element={<Usecase/>}/>
             <Route path='/product-overview' element={<Product/>}/>
             <Route path='/technology' element={<Technology/>}/>
+            <Route path="/book-demo" element={<Demo />} />
 
     </Routes>
     </div>

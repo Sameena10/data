@@ -3,13 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 28px 50px;
-  background-color: white;
+  background-color: #f6f9ff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
   height: 120px;
-
 }
 
 .logo {
