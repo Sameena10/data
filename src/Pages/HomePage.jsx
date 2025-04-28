@@ -280,7 +280,16 @@ return (
     ))}
   </div>
 </section>
-
+<section class="connect-the-dots-section">
+  <div class="content">
+    <h2>Unlock New Insights Instantly.</h2>
+    <p>
+      Experience the next generation of due diligence! Access critical information faster, 
+      smarter, and with zero hassle. Centralize your risk analysis with our intelligent platform.
+    </p>
+    <a href="#book-demo" class="cta-button">Request A Demo</a>
+  </div>
+</section>
 </div>
 </>
 )

@@ -619,3 +619,43 @@ h1 {
     width: 100%;
   }
 }
+
+/* demo button  */
+.connect-the-dots-section {
+  background-color: #003366; 
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.connect-the-dots-section .content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.connect-the-dots-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.connect-the-dots-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.connect-the-dots-section .cta-button {
+  display: inline-block;
+  background-color: white;
+  color: #003366;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.connect-the-dots-section .cta-button:hover {
+  background-color: #e0e0e0;
+}
